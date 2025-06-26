@@ -5,5 +5,8 @@
     ./opts.nix
     ./keymaps.nix
     ./ui.nix
+
+    # LSP
+    ./plugins/lsp/lsp.nix
   ];
 }
