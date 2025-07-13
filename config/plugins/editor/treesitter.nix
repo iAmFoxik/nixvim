@@ -3,8 +3,31 @@
   plugins.treesitter = {
     enable = true;
     settings = {
+      auto_install = true;
+      ensure_installed = [
+        "bash"
+        "c"
+        "diff"
+
+        "lua"
+        "luadoc"
+        "markdown"
+        "markdown_inline"
+        "nix"
+        "fish"
+        "python"
+        "rust"
+      ];
       indent.enable = true;
-      highlight.enable = true;
+      sync_install = false;
+      highlight = {
+        additional_vim_regex_highlighting = true;
+        custom_captures = { };
+        disable = [
+          # "rust"
+        ];
+        enable = true;
+      };
     };
     folding = false;
     nixvimInjections = true;

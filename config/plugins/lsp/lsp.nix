@@ -78,6 +78,10 @@
         nil_ls.enable = true;
         qmlls.enable = true;
         clangd.enable = true;
+        hls = {
+          enable = true;
+          installGhc = false;
+        };
       };
 
       keymaps = {
