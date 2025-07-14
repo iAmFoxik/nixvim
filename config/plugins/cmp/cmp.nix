@@ -37,8 +37,8 @@
 
         formatting = {
           fields = [
-            "kind"
             "abbr"
+            "kind"
             "menu"
           ];
         };
@@ -61,12 +61,19 @@
 
         window = {
           completion.__raw = ''cmp.config.window.bordered()'';
-          #   completion = {
-          #     border = "Normal:Normal,FloatBorder:CmpBorder,CursorLine:PmenuSel,Search:None";
-          #   };
-          #   documentation = {
-          #     border = "Normal:Pmenu,FloatBorder:pmenu";
-          #   };
+          documentation.__raw = ''
+            cmp.config.window.bordered({
+              winhighlight = "Normal:Normal,FloatBorder:CmpBorder,CursorLine:PmenuSel,Search:None";
+            })
+          '';
+          # completion = {
+          #   # border = "Normal:Normal,FloatBorder:CmpBorder,CursorLine:PmenuSel,Search:None";
+          #   winhighlight = "Normal:Normal,FloatBorder:CmpBorder,CursorLine:PmenuSel,Search:None";
+          # };
+          # documentation = {
+          #   # border = "Normal:Pmenu,FloatBorder:pmenu";
+          #   winhighlight = "Normal:Pmenu,FloatBorder:pmenu";
+          # };
         };
       };
     };
@@ -77,5 +84,20 @@
     cmp-path.enable = true;
     cmp-vsnip.enable = true;
     cmp-calc.enable = true;
+    lspkind = {
+      enable = true;
+      mode = "symbol";
+      cmp = {
+        enable = true;
+        maxWidth = 50;
+        menu = {
+          nvim_lsp = "[LSP]";
+          buffer = "[BUF]";
+          calc = "[CLC]";
+          path = "[PTH]";
+          luasnip = "[LSN]";
+        };
+      };
+    };
   };
 }

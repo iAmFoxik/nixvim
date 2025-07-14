@@ -12,6 +12,16 @@
           go_in_plus = "<CR>";
         };
       };
+      # indentscope = {
+      #   draw = {
+      #     delay = 1;
+      #   };
+      #   options = {
+      #     try_as_border = true;
+      #   };
+      #
+      #   symbol = "▎";
+      # };
     };
   };
 

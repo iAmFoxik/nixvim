@@ -19,11 +19,12 @@
     # Editor
     ./plugins/editor/barbar.nix
     ./plugins/editor/editorconfig.nix
-    ./plugins/editor/indent-blankline.nix
+    # ./plugins/editor/indentmini.nix
     ./plugins/editor/mini.nix
     ./plugins/editor/neo-tree.nix
     ./plugins/editor/nerdy.nix
     ./plugins/editor/overseer.nix
+    ./plugins/editor/surround.nix
     ./plugins/editor/telescope.nix
     ./plugins/editor/treesitter.nix
 
